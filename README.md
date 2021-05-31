@@ -4,7 +4,7 @@ C++ implementation of [Mandelbrot Set](https://physicspython.wordpress.com/2020/
 
 #### OpenGL Instructions
 
-##### Check/Install OpenGL
+#### Install OpenGL
 
 To get the version of OpenGL (or whehter it exists in your computer)
 ```
@@ -20,7 +20,7 @@ sudo apt-get install mesa-utils
 ```
 and check again.
 
-##### Install GLFW3
+#### Install GLFW3
 
 GLFW - a small C library that lets you create and manage windows, OpenGL and OpenGL ES contexts and Vulkan surfaces, enumerate monitors and video modes as well as handle inputs such as keyboard, mouse, joystick, clipboard and time.\
 Both printf and std::cout can be used in c++. Almost anything from c can be used in c++.
@@ -32,7 +32,7 @@ sudo apt-get install libglfw3
 sudo apt-get install libglfw3-dev
 ```
 
-##### Install GLM
+#### Install GLM
 
 GLM is a C++ mathematics library for graphics software based on the OpenGL Shading Language (GLSL) specification.
 
@@ -70,6 +70,26 @@ int main () {
 ```
 Output should print a zero vector.
 
+#### Install GLEW
+
+Most compilers give you an OpenGL header that provides support for OpenGL 1.1, but most of the functions provided in that version of OpenGL have been long since deprecated, and lacks important features such as shaders and vertex buffer objects. GLEW is basically just a header (there is a source file that must also be compiled, but you can just include it in your project) that provides newer OpenGL functionality.
+
+To install glew using GNU use,
+```
+sudo apt-get install build-essential libxmu-dev libxi-dev libgl-dev
+```
+
+#### The Mandelbrot Class
+
+The code is divided into three files - the header file, the source file and the test file.
+
+```
+mandelbrot.hpp
+mandelbrot.cpp
+mandelbrot_test.cpp
+```
+
+
 #### Notes
 Vertices:: these are the points from which shapes like triangles will later be constructed.
 
@@ -84,3 +104,4 @@ program. The shader also has the ability to discard certain fragments, which
 means that a shape will be see-through there.
 
 
+	
