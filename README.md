@@ -88,6 +88,11 @@ mandelbrot.hpp
 mandelbrot.cpp
 mandelbrot_test.cpp
 ```
+To execute the code
+```
+g++ -std=c++14 mandelbrot.cpp mandelbrot_test.cpp -o mandelbrot_test
+./mandelbrot_test
+```
 
 
 #### Notes
